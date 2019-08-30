@@ -1,0 +1,856 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- Page Title Here -->
+  <title>InnoEAV - A high performance/ open-source framework</title>
+  <!-- Meta -->
+  <!-- Page Description Here -->
+  <meta name="description" content="A high performance / open-source electric vehicles framework">
+  <!-- Disable screen scaling-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <!-- Web fonts and Web Icons -->
+  <link rel="stylesheet" href="simpleux/fonts/opensans/stylesheet.css">
+  <link rel="stylesheet" href="simpleux/fonts/bebas/stylesheet.css">
+  <link rel="stylesheet" href="simpleux/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="simpleux/fonts/font-awesome.min.css">
+  <!-- Vendor CSS style -->
+  <link rel="stylesheet" href="simpleux/css/pageloader.css">
+  <!-- Uncomment below to load individualy vendor CSS -->
+  <link rel="stylesheet" href="simpleux/css/bootstrap.min.css">
+  <link rel="stylesheet" href="simpleux/js/vendor/swiper.min.css">
+  <link rel="stylesheet" href="simpleux/js/vendor/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="simpleux/js/vegas/vegas.min.css">
+  <!-- Main CSS files -->
+  <link rel="stylesheet" href="simpleux/css/main.css">
+  <!-- add alt layout here -->
+  <script src="simpleux/js/vendor/modernizr-2.7.1.min.js"></script>
+</head>
+<body id="menu" class="body-page">
+  <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <!-- Page Loader : just comment these lines to remove it -->
+  <div class="page-loader" id="page-loader">
+    <div>
+      <div class="icon ion-spin"></div>
+      <p>loading</p>
+    </div>
+  </div>
+  <!-- BEGIN OF site header Menu -->
+  <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+    <!-- Begin of menu icon toggler -->
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+      <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
+      <span class="menu-icon menu-icon-random">
+        <span class="bars">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
+    <!-- End of menu icon toggler -->
+    <!-- Begin of logo/brand -->
+    <a class="navbar-brand" href="#">
+      <span class="logo">
+        <img class="light-logo" src="simpleux/img/logo_white.png" alt="Logo">
+      </span>
+      <span class="text">
+        <span class="line">Innopolis University</span>
+        <span class="line sub" onclick="window.location.href = 'https://university.innopolis.ru/en/';">Check our website</span>
+      </span>
+    </a>
+    <!-- End of logo/brand -->
+    <!-- begin of menu wrapper -->
+    <div class="all-menu-wrapper" id="navbarMenu">
+      <!-- End of top menu -->
+      <!-- Begin of hamburger mainmenu menu -->
+      <nav class="navbar-mainmenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="simpleux/index.html#home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="simpleux/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="simpleux/item.html">Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="simpleux/demo.html">Demo</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of hamburger mainmenu menu -->
+      <!-- Begin of sidebar nav menu params class: text-only / icon-only-->
+      <nav class="navbar-sidebar ">
+        <ul class="navbar-nav" id="qmenu">
+          <li class="nav-item" data-menuanchor="home">
+            <a href="#home">
+              <i class="icon ion-ios-home-outline"></i>
+              <span class="txt">Home</span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="about">
+            <a href="#about">
+              <i class="icon ion-ios-information-outline"></i>
+              <span class="txt">About</span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="diagram">
+            <a href="#diagram">
+              <i class="icon ion-ios-list-outline"></i>
+              <span class="txt">Diagram</span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="resources">
+            <a href="#resources">
+              <i class="icon ion-ios-albums-outline"></i>
+              <span class="txt">Resources</span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="register">
+            <a href="#register">
+              <i class="icon ion-ios-compose-outline"></i>
+              <span class="txt">Register</span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="contact">
+            <a href="#contact">
+              <i class="icon ion-ios-telephone-outline"></i>
+              <span class="txt">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of sidebar nav menu -->
+    </div>
+    <!-- end of menu wrapper -->
+  <!-- END OF site header Menu-->
+  <!-- BEGIN OF page cover -->
+  <div class="page-cover">
+    <!-- Cover Background -->
+    <div class="cover-bg bg-img" data-image-src="img/bg-default1.jpg"></div>
+    <!-- BEGIN OF Slideshow Background - uncomment below to use background slideshow-->
+    <div class="cover-bg slide-show">
+      <i class='img' data-src='./img/bg-default1.jpg'></i>
+      <i class='img' data-src='./img/bg-default2.jpg'></i>
+      <i class='img' data-src='./img/bg-default3.jpg'></i>
+    </div>
+    <!-- END OF Slideshow Background -->
+    <!-- Transluscent mask as filter -->
+    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(29, 29, 29, 0.2)"></div>
+  </div>
+  <!--END OF page cover -->
+  <!-- BEGIN OF page main content -->
+  <main class="page-main page-fullpage main-anim" id="mainpage">
+    <!-- Begin of home section -->
+    <div class="section section-home fullscreen-md fp-auto-height-responsive " data-section="home">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper">
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row">
+            <div class="col-12 col-md-6 text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h2 class="display-4 display-title home-title bordered anim-1">Inno-EAV</h2>
+                <h4 class="anim-2">A High Performance Open-source Framework for Electric Vehicles Charging .</h4>
+              </div>
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <a class="btn btn-outline-white btn-round" href="#about">
+                  Get started
+                </a>
+              </div>
+            </div>
+            <!-- begin of right content -->
+            <div class="col-12 col-md-6 right-content hidden-sm center-vh">
+              <!-- content -->
+              <div class="section-content">
+                <!-- illustartion -->
+                <div class="illustr zoomout-1">
+                  <img class="logo" src="simpleux/img/logo_white.png" alt="Logo">
+                </div>
+              </div>
+            </div>
+            <!-- end of right content -->
+          </div>
+        </div>
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Scroll Down</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of home section -->
+    <!-- Begin of description section -->
+    <div class="section section-description fp-auto-height-responsive " data-section="about">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper center-vh dir-col anim">
+        <!-- title -->
+        <div class="section-title text-center">
+          <h5 class="title-bg">About</h5>
+          <h2 class="display-4 display-title anim-2">Innopolis website for Inno-EAV framework</h2>
+        </div>
+        <!-- content -->
+        <div class="section-content reduced anim text-center">
+          <!-- title and description -->
+          <div class="title-desc anim-3">
+
+              <span style="font-size:20px; background-color: #ffffff; color:black;">
+                We introduce Inno-EAV, an open-source charging
+                framework for EAVs that employs machine-to-machine (M2M) communication.
+                 The idea behind M2M is to have networked devices that can
+                interact, exchange information and perform actions without any manual
+                assistance of humans. The advantages of the Inno-EAV include the au
+                tomation of charging processes and the collection of relevant data that
+                can support better decision making in the spheres of energy distribution
+                and the prospect of adoption of this technology to mention a few..
+                This project also includes a part of micro-transaction and cryptomonnaise
+                so that the car pays for the charging station on its own ,automatically.
+            </span>
+          </div>
+        </div>
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Team</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of description section -->
+    <!-- Begin of description section -->
+    <div class="section section-description fp-auto-height-responsive " data-section="team">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper center-vh dir-col anim">
+        <!-- title -->
+        <div class="section-title text-center">
+          <h5 class="title-bg">Team</h5>
+        </div>
+        <!-- content -->
+        <div class="section-content anim text-center">
+          <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
+          <!-- begin of item -->
+          <div class="item row justify-content-between">
+            <!-- img-frame-normal demo -->
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateUp">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people1-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Ziyad Elbanna</h5>
+                      <p class="small">Co-founder/ Security Engineer </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- img-frame-normal demo -->
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people2-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Manuel Mazzara</h5>
+                      <p class="small">Founder /Professor Dr.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people3-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Mansur Khazeev</h5>
+                      <p class="small">Teacher Assistant</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people4-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                        <h5>Luiz Jonata</h5>
+                      <p class="small">Teacher Assistant</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people5-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Ilya Afanasyev</h5>
+                      <p class="small">Professor Dr.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people7-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Dragos Strugar</h5>
+                      <p class="small">Bachelor's Student</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people8-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Rasheed Hussain</h5>
+                      <p class="small">Profssor Dr.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people9-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Nikolay Buldakov</h5>
+                      <p class="small">Bachelor's Student</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people10-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Anastasia Reprintseva</h5>
+                      <p class="small">Bachelor's Student</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people11-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Aymeric Delabarre</h5>
+                      <p class="small">Intern</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people12-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Rozalya Amirova</h5>
+                      <p class="small">Bachelor's Student</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people13-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Adam Zubair</h5>
+                      <p class="small">Master's Student</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 center-vh">
+              <div class="section-content anim translateDown">
+                <div class="images text-center">
+                  <div class="img-avatar-alpha">
+                    <div class="img-1 shadow">
+                      <a href="item.html">
+                        <img class="img" src="simpleux/img/items/img-people14-square.jpg" alt="Image">
+                      </a>
+                    </div>
+                    <div class="legend text-center pos-abs">
+                      <h5>Nikita Kalinskiy</h5>
+                      <p class="small">Master's Student</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- end of item -->
+        </div>
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon"></span>
+            <span class="txt">Our Diagram</span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of description section -->
+    <!-- Begin of list feature section -->
+
+
+    <div class="section section-twoside fp-auto-height-responsive " data-section="diagram">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper twoside">
+        <!-- title -->
+        <div class="section-title text-center">
+          <h5 class="title-bg ">Diagram</h5>
+        </div>
+        <!-- begin of carousel-swiper-beta -->
+        <div class="slider-wrapper carousel-swiper-beta carousel-smalls carousel-swiper-beta-demo mt-40">
+          <!-- slider -->
+          <div class="slider-container swiper-container">
+            <ul class="item-list swiper-wrapper">
+              <!-- item -->
+              <li class="slide-item swiper-slide">
+                <div class="item-wrapper">
+                  <div class="illustr">
+                    <img src="simpleux/img/items/img-sample2-small-2.png" alt="Image" class="img">
+                  </div>
+
+                </div>
+              </li>
+              <li class="slide-item swiper-slide">
+                <div class="item-wrapper">
+                  <div class="illustr">
+                    <img src="simpleux/img/items/img-sample3-small.jpg" alt="Image" class="img">
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="items-pagination bar"></div>
+          <!-- navigation -->
+          <div class="items-button bottom fit items-button-prev">
+            <a class="btn btn-transp-arrow btn-primary icon-left" href="">
+              <span class="icon arrow-left"></span>
+              <span class="text">Prev</span>
+            </a>
+          </div>
+          <div class="items-button bottom fit items-button-next">
+            <a class="btn btn-transp-arrow btn-primary" href="">
+              <span class="icon arrow-right"></span>
+              <span class="text">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of list feature section -->
+    <!-- Begin of pricelist section -->
+    <div class="section section-pricelist " data-section="resources">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper center-vh dir-col anim">
+        <!-- title -->
+        <div class="section-title text-center">
+          <h5 class="title-bg">Resources</h5>
+          <h2 class="display-4 display-title anim-2">Resources</h2>
+        </div>
+        <!-- content -->
+        <div class="section-content anim text-center fullwidth">
+          <!-- Princing table -->
+          <div class="price-table">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <!-- begin of price item -->
+                <div class="price-item price-item-secondary shadow mb-4 sr-up-td4">
+                  <h4 class="item-name">Research Paper 1</h4>
+
+                  <img class="center" src="simpleux/img/items/doc_3.jpg" alt="Image">
+
+                  <div class="item-footer">
+                    <a class="btn btn-secondary btn-round" href="files/file3.pdf">
+                      Preview
+                    </a>
+                  </div>
+                </div>
+                <!-- end of price item -->
+              </div>
+              <div class="col-12 col-md-4">
+                <!-- begin of price item -->
+                <div class="price-item price-item-secondary shadow mb-4 sr-up-td4">
+                  <h4 class="item-name">Research Paper 2</h4>
+
+                  <img class="center" src="simpleux/img/items/doc_1.jpg" alt="Image">
+
+                  <div class="item-footer">
+                    <a class="btn btn-secondary btn-round" href="https://arxiv.org/pdf/1804.08964.pdf">
+                      Preview
+                    </a>
+                  </div>
+                </div>
+                <!-- end of price item -->
+              </div>
+              <div class="col-12 col-md-4">
+                <!-- begin of price item -->
+                <div class="price-item price-item-secondary shadow sr-up-td4">
+                  <h4 class="item-name">Research Paper 3</h4>
+
+                  <img class="center" src="simpleux/img/items/doc_2.jpg" alt="Image">
+
+                  <div class="item-footer">
+                    <a class="btn btn-secondary btn-round" href="files/file1.pdf">
+                      Preview
+                    </a>
+                  </div>
+                </div>
+                <!-- end of price item -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of pricelist section -->
+    <!-- Begin of register/login/signin section -->
+    <div class="section section-register fp-auto-height-responsive " data-section="register">
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper">
+        <!-- title -->
+        <div class="section-title text-center">
+          <h5 class="title-bg">Register</h5>
+        </div>
+        <!-- content -->
+        <div class="section-content anim text-center">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+              <!-- Registration form container-->
+              <form class="send_email_form form-container form-container-transparent form-container-white"
+              method="post" action="index.html">
+                <div class="form-desc">
+                  <h2 class="display-4 display-title  anim-2">Register</h2>
+                  <p class="invite  anim-3">Register your vehicle in the nearest charging station now.</p>
+                </div>
+                  <div class="form-group mb-0">
+                    <button id="submit-email" class="btn btn-white btn-round btn-full form-success-gone" name="submit_email" onclick="window.location.href = 'Charging-station-registry/Website/index.html';" > Visit our registration form</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of register/login/signin section -->
+
+
+
+    <!-- Begin of contact section -->
+    <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
+      <!-- begin of information slide -->
+      <div class="slide" id="information" data-anchor="information">
+        <!-- Begin of slide section wrapper -->
+        <div class="section-wrapper">
+          <!-- title -->
+          <div class="section-title text-center">
+            <h5 class="title-bg">Contact</h5>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <!-- content -->
+              <div class="section-content anim text-left">
+                <!-- title and description -->
+                <div class="title-desc">
+                  <div class="anim-2">
+                    <h5>Customer Service</h5>
+                    <h2 class="display-4 display-title">Contact</h2>
+                    <p>For questions about our university and projects found on our website.
+                      </p>
+                  </div>
+                  <div class="address-container anim-3">
+                    <div class="row">
+                      <div class="col-12 col-md-12 col-lg-6">
+                        <h4>Contact</h4>
+                        <p>Call: +7 (843) 203-92-53 </p>
+                        <p>Email: university@innopolis.ru</p>
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-6">
+                        <h4>Address</h4>
+                        <p>
+                          University address
+                          <br>1, Universitetskaya Str., Innopolis,
+                          <br> 420500, Russia
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Action button -->
+                <div class="btns-action anim-4">
+                  <a class="btn btn-outline-white btn-round" href="mailto:university@innopolis.ru">
+                    <span class="txt">Send Message</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+            </div>
+          </div>
+        </div>
+        <!-- End of slide section wrapper -->
+      </div>
+      <!-- end of information slide -->
+
+
+
+      <!-- begin of message slide -->
+      <div class="slide" id="message" data-anchor="message">
+        <!-- Begin of slide section wrapper -->
+        <div class="section-wrapper">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-6 center-vh">
+              <!-- content -->
+              <div class="section-content anim text-left">
+                <!-- title and description -->
+                <div class="title-desc">
+                  <div>
+                    <h5>Customer Service</h5>
+                    <h2 class="display-4 display-title">Email Us</h2>
+                    <p>For questions about our university and projects found on our website.
+                      </p>
+                  </div>
+                </div>
+                <!-- Action button -->
+                <div class="btns-action">
+                  <a class="btn btn-outline-white btn-round" href="#contact/information">
+                    <span class="txt">Information</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <!-- content -->
+              <div class="section-content anim text-left">
+                <!-- title and description -->
+                <div class="">
+                  <div class="form-container form-container-card">
+                    <!-- Message form container -->
+                    <form class="send_message_form message form" method="post" action="index.html"
+                    id="message_form">
+                      <div class="form-group name">
+                        <label for="mes-name">Name :</label>
+                        <input id="mes-name" name="name" type="text" placeholder="" class="form-control-line form-success-clean"
+                        required>
+                      </div>
+                      <div class="form-group email">
+                        <label for="mes-email">Email :</label>
+                        <input id="mes-email" type="email" placeholder="" name="email" class="form-control-line form-success-clean"
+                        required>
+                      </div>
+                      <div class="form-group no-border">
+                        <label for="mes-text">Message</label>
+                        <textarea id="mes-text" placeholder="..." name="message" class="form-control form-control-outline thick form-success-clean"
+                        required></textarea>
+                        <div>
+                          <p class="message-ok invisible form-text-feedback form-success-visible">Your message has been sent, thank you.</p>
+                        </div>
+                      </div>
+                      <div class="btns">
+                        <button id="submit-message" class="btn btn-normal btn-white btn-round btn-full email_b"
+                        name="submit_message">
+                          <span class="txt">Send</span>
+                          <span class="arrow-icon"></span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of slide section wrapper -->
+      </div>
+      <!-- end of message slide -->
+    </div>
+    <!-- End of contact section -->
+  </main>
+  <!-- END OF page main content -->
+
+
+
+
+
+  <!-- BEGIN OF page footer -->
+  <footer id="site-footer" class="page-footer">
+    <!-- Left content -->
+    <!--Nothing for now-->
+    <!-- Right content -->
+    <div class="footer-right">
+      <ul class="social">
+        <li>
+          <a href="https://github.com/Ziyadelbanna/Inno-EAV">
+            <i class="icon fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/school/innopolis-university/">
+            <i class="icon fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/InnopolisU/">
+            <i class="icon fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/innopolisu?lang=ar">
+            <i class="icon fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/innopolisu/">
+            <i class="icon fa fa-instagram"></i>
+          </a>
+          </li>
+          <li>
+          <a href="https://www.youtube.com/user/InnopolisU">
+            <i class="icon fa fa-youtube"></i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </footer>
+  <!-- END OF site footer -->
+  <!-- scripts -->
+  <!-- All Javascript plugins goes here -->
+  <script src="simpleux/js/vendor/jquery-1.12.4.min.js"></script>
+  <!-- All vendor scripts -->
+  <script src="simpleux/js/vendor/scrolloverflow.min.js"></script>
+  <script src="simpleux/js/vendor/all.js"></script>
+  <script src="simpleux/js/particlejs/particles.min.js"></script>
+  <!-- Countdown script -->
+  <script src="simpleux/js/jquery.downCount.js"></script>
+  <!-- Form script -->
+  <script src="simpleux/js/form_script.js"></script>
+  <!-- Javascript main files -->
+  <script src="simpleux/js/main.js"></script>
+  </body>
+</html>

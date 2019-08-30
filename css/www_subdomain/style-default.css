@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+  .page-header-alpha.scrolled .menu .navbar-nav-menu .nav-item.active a {
+    color: #ffffff; } }
+
+.landing-highhlight-features {
+  background: url("img/bg-wave-sym.png"), linear-gradient(to left, #0090E8, #00E872);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain; }
+
+body.body-black {
+  background: #1d202c; }
+
+body.body-black {
+  position: relative;
+  background: url("img/www_subdomain/bg_h_phone.svg"), #1d202c;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-attachment: fixed; }
+  @media screen and (min-width: 768px) {
+    body.body-black {
+      background: url("img/www_subdomain/bg_h.svg"), #1d202c;
+      background-repeat: no-repeat;
+      background-position-x: 50%;
+      background-position-y: 50%;
+      background-size: cover;
+      background-attachment: fixed; } }
+
+.bg-img-layer-white {
+  position: relative; }
+  .bg-img-layer-white:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0.4;
+    z-index: 0; }
+    @media screen and (min-width: 768px) {
+      .bg-img-layer-white:before {
+        background: url("img/www_subdomain/bg_h_white.svg"), linear-gradient(to left, #0090E8, #00E872);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed; } }
+
+.bg-img-layer-blue {
+  position: relative; }
+  .bg-img-layer-blue:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0.4;
+    z-index: 0; }
+    @media screen and (min-width: 768px) {
+      .bg-img-layer-blue:before {
+        background: url("img/www_subdomain/bg_h.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed; } }
+
+/*# sourceMappingURL=style-default.css.map */
