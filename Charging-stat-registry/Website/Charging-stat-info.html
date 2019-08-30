@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+  function validateForm() {
+      var name = document.getElementById('name');
+      var id = document.getElementById('pass');
+      var address = document.getElementById('address');
+
+          if (check_name(name)){
+             if (check_CS_id(id)){
+              if (check_name(address)){
+              }
+              else{
+                return false;
+              }
+            }
+            else{
+              return false;
+            }
+          }
+          else{
+            return false;
+          }
+
+          return true;
+        }
+
+    function check_name(input) {
+
+      var regex_name = /^[a-z A-Z]{2,30}$/;
+
+      if ((input).value == "") {
+      alert("All entries must be filled out");
+
+      return false;
+      }
+
+       else if (String((input).value).match(regex_name) == null)
+          {
+            alert("Please enter a valid name from A - Z between 2-30 characters");
+            return false;
+          }
+          return true;
+
+    }
+
+    function check_CS_id(input) {
+
+      var regex_cs = /^\(?([0-9]{3})\)?([0-9]{3})?([0-9]{4})$/;
+
+      if ((input).value == "") {
+      alert("All entries must be filled out");
+      return false;
+      }
+
+       else if (String((input).value).match(regex_cs) == null)
+          {
+            alert("Please enter 10-digit-cs ID");
+            return false;
+          }
+          return true;
+        }
+    return true;
+
+  </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charging station information</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts-2/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!-- import the styles sheet first -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="stylesheet" type="text/css" href="util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- the favicon in the top left -->
+    <link rel="icon" type="image/x-icon" href="images0/image.ico">
+
+</head>
+<body>
+
+    <div class="container-login3">
+
+                        <form action=insert-charging-stat.inc.php method="POST" class="register-form" id="register-form">
+
+                          <div class="signup-form">
+
+                          <h2 class="form-title">Charging station</h2>
+
+                          <div class="signup-image-2">
+                              <img src="images/station-image.jpg" alt="station image">
+                          </div>
+
+                          <div class="form-group">
+                              <label for="pass"><i class="zmdi zmdi-key"></i></label>
+                              <input type="text" name="pass" id="CS_ID" placeholder="4-digit Charging station ID"/>
+                          </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-card"></i></label>
+                                <input type="text" name="name" id="CS_name" placeholder="Charging station Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-map"></i></label>
+                                <input type="text" name="address" id="CS_address" placeholder="Address"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in <a href="https://university.innopolis.ru/" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group">
+                                  <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+
+                          </div>
+
+
+                        </form>
+
+    </div>
+
+  </body>
+</html>

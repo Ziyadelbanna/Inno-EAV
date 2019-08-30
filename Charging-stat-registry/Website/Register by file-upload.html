@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>File upload</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="styles2.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<link rel="stylesheet" type="text/css" href="util.css">
+<!-- the favicon in the top left -->
+<link rel="icon" type="image/x-icon" href="images/image.ico">
+
+</head>
+<body>
+
+	<div class="container-login100">
+		<div class="wrap-login3">
+			<fieldset>
+
+			<legend>Please, Upload your .JSON file here</legend>
+
+			<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+
+					<div>
+						<label form="fileselect">File to upload:</label>
+						<input type="file" id="fileselect" name="fileselect[]"/>
+						<div id="filedrag">or drop file here</div>
+					</div>
+
+					<div id="next_button">
+						<button name= "Next" id = "Next" class ="login100-form-btn" onclick="window.location.href='Charging-stat-info.html';"style="display:none;">Next</button>
+					</div>
+
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+ <script src="filedrag.js"></script>
+
+
+</body>
+</html>
