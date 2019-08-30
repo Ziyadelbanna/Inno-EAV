@@ -1,15 +1,4 @@
-/*----------------------------------------------------------------------
-Page loader CSS BY HighHay
 
-USAGE:
-------
-- Add this as an external CSS file and put it before other css links inside
-html file
-- Add the following tag inside HTML file :
-<div class='page-loader'>
-    <div><i class='fa fa-spinner  fa-spin'></i><p>loading</p></div>
-</div>
-------------------------------------------------------------------------*/
 .page-loader{
     position: fixed;
     z-index: 200;
@@ -18,8 +7,8 @@ html file
     top:0;
     left:0;
     background: #fff;
-    display: block;  
-    
+    display: block;
+
 }
 .page-loader .fa{
     font-size: 2.5rem;
@@ -31,7 +20,7 @@ html file
     -moz-transition: 0.6s;
     transition: 0.6s;
     opacity: 1;
-    visibility: visible;    
+    visibility: visible;
 }
 .page-loader.p-hidden{
     visibility: hidden;
@@ -44,7 +33,7 @@ html file
         text-align: center;
         color: #1d1d1d;
         margin-top: -50px;
-    	display: block; 
+    	display: block;
     }
 		.page-loader div .icon{
 			display: inline-block;
