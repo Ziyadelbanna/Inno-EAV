@@ -1,4 +1,4 @@
 # Inno-EAV
-:oncoming_automobile: An Innopolis University high performance open-source electric vehicles charging framework
+Open-source framework employing M2M communication to charge electric autonomous vehicles created by Innopolis University
 
 
